@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sway</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar" onclick="hideSideBar()">
+      <div class="nav-left">
+        <!-- <i onclick="hideSideBar()" class="fa-solid fa-xmark"></i> -->
+        <img src="assets/home/sway-logo.png" />
+      </div>
+      <div class="nav-right">
+        <a href="index" class="nav-option yellow-border green-text"
+          ><i class="fa-solid fa-house side-bar-icon"></i> Home</a
+        >
+        <a href="menu" class="nav-option"
+          ><i class="fa-solid fa-list side-bar-icon"></i>Menu</a
+        >
+        <a href="about-us" class="nav-option"
+          ><i class="fa-solid fa-circle-info side-bar-icon"></i>About Us</a
+        >
+        <a href="store" class="nav-option store"
+          ><i class="fa-solid fa-shop side-bar-icon"></i>Store Locator</a
+        >
+        <button target="_blank" class="nav-button">
+          <a
+            href="feedback"
+            style="color: white; font-size: 14px; margin: 0; padding: 6px 16px"
+            >TALK TO US</a
+          >
+        </button>
+      </div>
+    </div>
+    <nav>
+      <div class="nav-left">
+        <img class="nav-logo" src="assets/home/sway-logo.png" />
+      </div>
+      <div class="nav-right">
+        <a href="index" class="nav-option yellow-border hideOnMobile">home</a>
+        <a href="menu" class="nav-option hideOnMobile">menu</a>
+        <a href="about-us" class="nav-option hideOnMobile">about us</a>
+        <a href="store" class="nav-option hideOnMobile">store locator</a>
+        <button target="_blank" class="nav-button hideOnMobile">
+          <a href="feedback">talk to us</a>
+        </button>
+        <i onclick="showSideBar()" class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <div class="hero-section">
+      <img class="hero-image-text" src="assets/home/home-bg-text.webp" />
+      <div class="buy-links">
+        <div class="link-button">
+          <a target="_blank" href="https://www.zomato.com/"
+            ><img src="assets/home/zomato.png"
+          /></a>
+        </div>
+        <div class="link-button yellow-bottom-border">
+          <a target="_blank" href="https://www.swiggy.com/"
+            ><img src="assets/home/swiggy.png"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <footer class="green">
+      <div class="contact-info">
+        <img src="assets/bg-logo.webp" class="random-img" />
+        <div class="f1">
+          <h3 class="footer-h3">CUSTOMER CARE</h3>
+          <p class="email yellow-text" style="margin: 14px 0">
+            customercare@sway.com
+          </p>
+        </div>
+
+        <div class="f2">
+          <div>
+            <p class="common-footer-header yellow-text">Contact</p>
+            <p class="common-footer-p">Customer Care</p>
+
+            <p class="common-footer-p">
+              <a href="feedback" style="color: white">Feedback</a>
+            </p>
+            <p class="common-footer-p">Opt Out</p>
+          </div>
+
+          <div>
+            <p class="common-footer-header yellow-text">Sway Cares</p>
+            <p class="common-footer-p">Nutrition Information</p>
+          </div>
+
+          <div>
+            <p class="common-footer-header yellow-text">Legal</p>
+            <p class="common-footer-p">Privacy Policy</p>
+            <p class="common-footer-p">Terms & Conditions</p>
+          </div>
+        </div>
+
+        <div class="f1 f3">
+          <h3 class="footer-h3">FOR VENDOR PARTNERSHIP</h3>
+          <p
+            class="email yellow-text annoying-p annoying-p"
+            style="margin: 14px 0"
+          >
+            partner@sway.in
+          </p>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="address">
+        Registered Address: Eversub India Private Limited, 6th Floor, Vaman
+        Centre, Makwana Road Marol, Andheri East, Mumbai-400059, Maharashtra
+      </p>
+      <p class="copyright">
+        All rights reserved. SWAY® is a Registered Trademark of Sway IP LLC.
+        ©2022 Sway IP LLC., and is licensed to Eversub India Private Limited
+        under an exclusive master franchisee arrangement for the territory of
+        the Republic of India.
+      </p>
+    </footer>
+
+    <script>
+      // ----------------sidebar--------------------------------------
+      const sideBar = document.querySelector(".sidebar");
+
+      function showSideBar() {
+        sideBar.style.display = "block";
+        document.body.style.overflow = "hidden";
+      }
+
+      function hideSideBar() {
+        sideBar.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      // -----------------------hero image change-------------------------------------
+
+      const herotextImage = document.querySelector(".hero-image-text");
+
+      function updateImage() {
+        if (window.innerWidth <= 1024) {
+          herotextImage.src = "assets/home/mobile-home-text.webp";
+        } else {
+          herotextImage.src = "assets/home/home-bg-text.webp";
+        }
+      }
+
+      updateImage();
+      window.addEventListener("resize", updateImage);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk To Us!</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #f6f6f6;">
+    <nav>
+        <div class="nav-left">
+            <img  class="nav-logo"  src="assets/home/sway-logo.png">
+        </div>
+    </nav>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <div class="container">
+        <div class="form-wrapper">
+            <form action="#">
+                <div class="form-heading">
+                    <strong>Talk to us !</strong>
+                    <p>Please share with us the below details:</p>
+                </div>
+                
+                <label class="input-label" for="number" class="text-input">Mobile Number:*</label>
+                <input type="phone" id="number" placeholder="Mobile number:*"  class="text-input" required>
+                <input  type="text" id="name" placeholder="Name:*" class="text-input" required>
+                <input  type="email" id="number" placeholder="Email id:*" class="text-input" required>
+                
+                <div class="radio-section">
+                    <label class="radio-label bold text-size" for="order">Do you have your last Order Details: <span style="color: #dc3545 !important;">*</span></label>
+                    <div id="order" class="radio-buttons">
+                        <div class="radio">
+                            <input type="radio" id="option1" name="radio" value="yes">
+                            <label class="text-size bold" for="option1">Yes</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="option2" name="radio" value="no" required>
+                            <label class="text-size bold" for="option2">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attachment-section">
+                    <label for="files" class="text-size bold attachment">Attachment, if any</label>
+                    <input type="file" id="files" class="upload">
+                </div>
+                <div class="policy-agree">
+                    <input type="checkbox" id="check" required>
+                    <label for="check">I agree to receive communication on newsletters, promotional content, offers and events through SMS, RCS, WhatsApp. <span style="color: #dc3545 !important;">*</span></label>
+                </div>
+
+                <div class="submit-section">
+                    <button type="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    <!-- -------------------------------------------------------------------------------------- -->
+    
+    <footer class="green">
+        <p class="address" style="text-align: left; padding-left: 100px; font-size: 12px;">Registered Address: Eversub India Private Limited, 6th Floor, Vaman Centre, Makwana Road Marol, Andheri East, Mumbai-400059, Maharashtra
+        </p>
+        <p class="copyright" style="font-size: 12px;">All rights reserved. SWAY® is a Registered Trademark of Sway IP LLC. ©2022 Sway IP LLC., and is licensed to Eversub India Private Limited under an exclusive master franchisee arrangement for the territory of the Republic of India.</p>
+    </footer>
+</body>
+</html>
