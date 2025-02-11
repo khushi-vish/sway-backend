@@ -30,9 +30,14 @@ Sway is a fully responsive, multi-page website inspired by the Subway website. B
 ## Folder Structure 📂 
 
 sway/
+
 │── views/          # Templates for different pages
+
 │── public/         # Static files (CSS, images, JS)
+
 │── routes/         # Express.js route handlers
+
 │── app.js          # Main server file
+
 │── package.json    # Dependencies & scripts
 
